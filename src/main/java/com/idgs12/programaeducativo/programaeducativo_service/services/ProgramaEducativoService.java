@@ -48,6 +48,7 @@ public class ProgramaEducativoService {
         return programaEducativoRepository.save(programa);
     }
 
+    // Listar todos los Programas Educativos con su División -- Alondra Itzel Pacheco de Jesus IDGS12 --
     @Transactional(readOnly = true)
     public List<ProgramaDivisionDTO> findAll() {
         List<ProgramaEducativoEntity> programas = programaEducativoRepository.findAll();

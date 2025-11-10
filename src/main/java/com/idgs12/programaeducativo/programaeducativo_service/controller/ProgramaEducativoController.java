@@ -32,12 +32,13 @@ public class ProgramaEducativoController {
         return ResponseEntity.ok(programa);
     }
 
+    // Listar o visualizar todos los Programas Educativos -- Alondra Itzel Pacheco de Jesus IDGS12 --
     @GetMapping("/all")
     public ResponseEntity<List<ProgramaDivisionDTO>> findAll() {
         List<ProgramaDivisionDTO> programas = service.findAll();
         return ResponseEntity.ok(programas);
     }
-
+    
     //Habilitar programa -- Maria Fernanda Rosas Briones IDGS12--
     @PutMapping("/habilitar/{id}")
     public ResponseEntity<ProgramaEducativoEntity> habilitar(@PathVariable Integer id) {
